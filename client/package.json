@@ -1,0 +1,14 @@
+{
+  "name": "swweight",
+  "private": true,
+  "workspaces": [
+    "packages/frontend",
+    "packages/shared",
+    "packages/e2e"
+  ],
+  "version": "1.0.0",
+  "description": "SW api",
+  "main": "index.js",
+  "author": "joshy",
+  "license": "MIT"
+}

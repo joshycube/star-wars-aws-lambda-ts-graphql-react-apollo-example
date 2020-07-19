@@ -1,0 +1,22 @@
+service:
+  name: sw-weight-lambda-api
+
+plugins:
+  - serverless-plugin-typescript
+  - serverless-offline
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+
+package:
+  individually: true
+
+functions:
+  main:
+    handler: src/lambda.handler
+    events:
+      - http:
+          method: post
+          path: graphql
+          cors: true
